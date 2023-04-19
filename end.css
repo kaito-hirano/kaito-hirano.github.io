@@ -40,12 +40,19 @@ body {
     height: 100%;
   }
   
-  #game img {
+  #master img {
     position: absolute;
     z-index: 50;
     left: 25%;
     width: 800px;
     height: 500px;
+  }
+
+  #yellowwani {
+    position: absolute;
+    z-index: 40;
+    left: 25%;  
+    top: 40%;  
   }
 
   #score {
@@ -62,6 +69,18 @@ body {
 
   .scoreFont {
     font-family: "Nikukyu";
+  }
+
+  #total {
+    position: absolute;
+    color: black;
+    z-index: 40;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: black;
+    font-size: 150%;
+
   }
 
   #waniwani {
