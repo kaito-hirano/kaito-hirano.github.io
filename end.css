@@ -1,0 +1,131 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap'); */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;    
+    /* text-align: center; */
+    /* background: #e9e9e6; */
+    background: white;
+    color: #fff;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  #start {
+    /* border: ridge thick black; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+  #wanimark {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 100;
+  }
+
+  #game {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #game img {
+    position: absolute;
+    z-index: 50;
+    left: 25%;
+    width: 800px;
+    height: 500px;
+  }
+
+  #score {
+    position: absolute;
+    color: black;
+    z-index: 40;
+    width: 300px;
+    height: 100px;
+    top: 0%;
+    left: 0%;
+    font-size: 250%;
+    
+  }
+
+  .scoreFont {
+    font-family: "Nikukyu";
+  }
+
+  #waniwani {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Nikukyu";
+    font-size: 160px;
+    color: black;
+    /* background: url("https://c1.staticflickr.com/9/8069/8203129819_732289d45e_b.jpg") center center; */
+    /* background: url("https://3.bp.blogspot.com/--OXNX9EYE6U/UUFxyDmbLwI/AAAAAAAAO1Y/-mzYTdLi7A4/s1600/wani_open.png") center center; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 50%;
+    transition: background-size .3s ease;
+    position: absolute;
+    z-index: 90;
+    text-align: center;
+    top: 30%;
+    height: 200px;
+    width: 100%;
+    /* line-height: bottom; */
+  }
+  #waniwani:hover {
+    color: black;
+    background: url("https://media.istockphoto.com/id/1256670143/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E3%82%AF%E3%83%AD%E3%82%B3%E3%83%80%E3%82%A4%E3%83%AB%E3%82%84%E3%83%AF%E3%83%8B%E3%81%AE%E3%83%97%E3%83%AA%E3%83%B3%E3%83%88%E3%81%A7%E3%82%B7%E3%83%BC%E3%83%A0%E3%83%AC%E3%82%B9%E3%81%AA%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E7%B7%91%E3%81%AE%E9%9D%A9%E3%81%AE%E8%82%8C%E3%81%AE%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3%E3%81%AE%E6%A8%A1%E5%80%A3%E5%A3%81%E7%B4%99%E5%8B%95%E7%89%A9%E7%9A%84%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC%E3%81%AE%E8%83%8C%E6%99%AF.jpg?s=612x612&w=is&k=20&c=Iyoa8s7LS1Mou3rZtNwPCLtwOShmhLkDatKV6nJi_pY=") center center;
+  }
+  #loop_wani {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    z-index: 90;
+    text-align: center;
+    bottom: 0%;
+    height: 200px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  ul {
+    display: flex;
+
+  }
+  .wani1 {
+    animation: loop 7s -0s linear infinite;
+  }    
+  .wani2 {
+    animation: loop2 14s linear infinite;
+  } 
+
+
+  @keyframes loop {
+    0% {
+      transform: translateX(-0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(-100);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
