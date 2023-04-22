@@ -64,7 +64,6 @@ let flg = 0;
 let count1 = 0;
 let waniNumber = 0;
 waniText.innerText = "ワニワニパニック";
-// timerText.innerText = timer;
 sucorText.innerText = sucor;
 
 
@@ -87,7 +86,6 @@ function timerStart() {
         setTimeout(timerStart,1000);
         if (timer % 2 === 0) {
             waniNumber = Math.floor((Math.random() * 8));
-            // console.log(waniNumber);
             setTimeout(wanigoY,2500);
         }
     } else {
@@ -157,6 +155,7 @@ function settei() {
   user1 = [...user1];
   setNum.innerText = "❔❔❔数字を3つ選択してATTACK!!!";
   strKeep = 1;
+  start.style.visibility = "hidden";
   }
 }
 
@@ -238,6 +237,12 @@ function doReload() {
   window.location.reload();
 }
 
+//Last Chance---------------------------------------------------------------------
+
+function lastChance () {
+  endNume.style.visibility = "hidden";
+}
+
 //ナンバーチェック設定-------------------------------------------------------------------
 
 function check () {
@@ -263,6 +268,10 @@ function check () {
   result.innerText = attResult.join("");
   if (hit === 3){
     gameclear();
+  } else if (count === 5) {
+    endNume.innerText = `Last Chance`;
+    endNume.style.visibility = "visible";
+    setTimeout(lastChance,3000);       
   } else if (count === 6) {
     gameOver();
   }
