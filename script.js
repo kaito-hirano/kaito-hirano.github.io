@@ -93,7 +93,6 @@ function timerStart() {
     } else {
         alert(`スコア： ${count1} 点`);
         window.location.reload();
-        return;
     }
     timer--;
     timerText.innerText =timer;
