@@ -147,29 +147,29 @@ body :hover {
 
 .wani1 {
     animation: loop 7s -0s linear infinite;
-  }    
-  .wani2 {
+}    
+.wani2 {
     animation: loop2 14s linear infinite;
-  } 
+} 
 
 
-  @keyframes loop {
+loop {
     0% {
       transform: translateX(-0%);
     }
-    to {
+to {
       transform: translateX(-100%);
     }
-  }
+}
   
-  @keyframes loop2 {
+loop2 {
     0% {
       transform: translateX(-100);
     }
-    to {
+to {
       transform: translateX(-200%);
     }
-  }
+}
 
 
 #wanigame {
