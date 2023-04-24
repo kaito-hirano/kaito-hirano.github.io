@@ -13,7 +13,7 @@ body :hover {
 #wanibtn {
     position: absolute;
     top: 45%;
-    left: 20%;
+    left: 10%;
     padding: 0 0 10px 0;
     background-color: green;
     color: green;
@@ -35,7 +35,7 @@ body :hover {
 #numeronbtn {
     position: absolute;
     top: 45%;
-    right: 20%;
+    right: 10%;
     padding: 5px;
     color: black;
     background-color: white;
@@ -397,7 +397,8 @@ body :hover {
 #attack {
     display: flex;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
+    padding-top: 5px;
     margin-left: 5%;
     color: white;
     background-color: black;
