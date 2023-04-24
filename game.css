@@ -1,0 +1,428 @@
+body {
+    position:relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body :hover {
+    cursor: pointer;
+}
+
+#wani_btn {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    padding: 0 0 10px 0;
+    background-color: green;
+    color: green;
+    background-color: white;
+    width: 500px;
+    height: 80px;
+    font-size: 50px;
+    font-family: "Nikukyu"; 
+    transition-duration: .4s;   
+
+}
+
+#wani_btn:hover {
+    color: white;
+    background-color: green;
+    transform: scale(1.1);
+}
+
+#numeron_btn {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    width: 500px;
+    height: 80px;
+    font-size: 50px;
+    font-family: fantasy;
+    transition-duration: .4s;  
+}
+
+#numeron_btn:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+}
+
+/* ワニワニパニック-------------------------------------- */
+
+#wanipani {
+    position:relative;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    width: 100%;
+    height: 100vh;    
+}
+
+#wani_mark  {
+    position:absolute;
+    padding: 5px;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    right: 0%;
+    top: 0%;
+}
+
+#wani_mark img {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+}
+
+#wani_start {
+    display:flex;
+    position:relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;    
+}
+
+#wani_text {
+    display:flex;
+    position:relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;    
+}
+
+#waniwani {
+    position:absolute;
+    margin: 0;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);  
+    color: black;
+    font-size: 150px;
+    width: 100%;
+    height: 200px;  
+    font-family: "Nikukyu";  
+}
+
+#loop_wani {
+    position:absolute;
+    bottom: 10%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 50px;
+    width: 100%;
+    height: 150px;     
+}
+
+
+
+#wani {
+    display:flex;
+    position:absolute;
+    top: 0%;
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+#wani img {
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    width: 150px;
+}
+
+.wani1 {
+    animation: loop 7s -0s linear infinite;
+}    
+.wani2 {
+    animation: loop2 14s linear infinite;
+} 
+
+
+@keyframes loop {
+  from {
+    transform: translateX(-0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+  
+@keyframes loop2 {
+  from {
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+
+#wani_game {
+    position:absolute;
+    top: 0%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;      
+}
+
+#master_wani {
+    position:absolute;
+    display:flex; 
+    top:0%;
+    left:50%;
+    transform: translateX(-50%);  
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 500px;      
+}
+
+#master_wani img {
+    z-index: 10; 
+    user-select: none;
+}
+
+#yellow_wani {
+    position:absolute;
+    display:flex;   
+    bottom: 5%;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;   
+    z-index: 9;    
+}
+
+#yellow_wani :hover {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+#wani_timer {
+    display:flex;
+    text-align: center;
+    flex-flow: column;
+    position:absolute;
+    color: black;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 300px;    
+}
+
+.timer_text { 
+    text-align: center;
+    user-select: none;
+    margin: 0;
+    padding: 0;  
+    width: 300px;
+    height: 300px;     
+}
+
+.sucor_text {
+    text-align: center;
+    user-select: none;
+    margin: 0;
+    padding: 0;  
+    width: 300px;
+    height: 100px;    
+}
+
+#timer {
+    text-align: center;
+    color: black;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+}
+
+#sucor {
+    text-align: center;
+    color: black;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 100px;
+    font-size: 50px;
+}
+
+#wani_gameST {
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 100px;
+    font-size: 50px;    
+}
+ 
+
+/* ヌメロン--------------------------------------------- */
+
+#numeron {
+    position:absolute;
+    color: white;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#numeron_text {
+    width: 400px;
+    margin: 10px 0 0 5px;
+    font-size: 70px;
+    font-family: fantasy;
+}
+
+#att_result {
+    display:flex;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: black;
+    width: 240px;
+    height: 350px;
+}
+
+#result {
+    color: white;
+    font-size: 40px;
+}
+
+#set_num {
+    color: black;
+    font-size: 50px;
+    width: 1000px;
+    height: 50px;
+    color: white;
+}
+
+#select_box {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    bottom: 0%;
+    left: 0%;
+}
+
+
+#num_set {
+    display:flex;
+    justify-content:center;
+    position:relative;
+    display: flex;
+    position:absolute;
+    text-align: center;  
+    width: 1500px;
+    height: 280px;
+    background-color: white;
+    color: black;
+}
+
+.text_grop {
+    display:flex;
+    position:relative;
+    width: 100%;
+    height: 50%;
+}
+
+.btn_grop {
+    display:flex;
+    justify-content:center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+
+#set_text {
+    display:flex;
+    position: absolute;
+    text-align: center;
+    left:  40%;
+    margin: 20px auto 0 auto;
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    width: 300px;
+    height: 120px;
+    font-size: 90px;
+}
+
+.btn_grop button {
+    display:inline-block;
+    text-align: center;
+    margin-top: 20px;
+    width: 100px;
+    height: 120px;
+    font-size: 100px;
+}
+
+#numeron_start {
+    background-color: white;
+    margin-left: 5px;
+    color: black;
+    font-size: 50px;
+}
+
+#attack {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 5%;
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 70px;
+    font-size: 50px;
+}
+
+#attack:hover {
+    color: white;
+    background-color: red;    
+}
+
+#end {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: red;
+    font-size: 90px;
+}
+
+#stamp {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0%;
+    left: 40%;
+}
