@@ -10,7 +10,7 @@ body :hover {
     cursor: pointer;
 }
 
-#wanibtn {
+#wani_btn {
     position: absolute;
     top: 45%;
     left: 10%;
@@ -26,13 +26,13 @@ body :hover {
 
 }
 
-#wanibtn:hover {
+#wani_btn:hover {
     color: white;
     background-color: green;
     transform: scale(1.1);
 }
 
-#numeronbtn {
+#numeron_btn {
     position: absolute;
     top: 45%;
     right: 10%;
@@ -46,7 +46,7 @@ body :hover {
     transition-duration: .4s;  
 }
 
-#numeronbtn:hover {
+#numeron_btn:hover {
     color: white;
     background-color: black;
     transform: scale(1.1);
@@ -64,7 +64,7 @@ body :hover {
     height: 100vh;    
 }
 
-#wanimark  {
+#wani_mark  {
     position:absolute;
     padding: 5px;
     margin: 0;
@@ -74,13 +74,13 @@ body :hover {
     top: 0%;
 }
 
-#wanimark img {
+#wani_mark img {
     margin: 0;
     width: 200px;
     height: 200px;
 }
 
-#waniStart {
+#wani_start {
     display:flex;
     position:relative;
     text-align: center;
@@ -90,7 +90,7 @@ body :hover {
     height: 100vh;    
 }
 
-#waniText {
+#wani_text {
     display:flex;
     position:relative;
     text-align: center;
@@ -113,7 +113,7 @@ body :hover {
     font-family: "Nikukyu";  
 }
 
-#loopwani {
+#loop_wani {
     position:absolute;
     bottom: 10%;
     margin: 0;
@@ -172,7 +172,7 @@ body :hover {
 }
 
 
-#wanigame {
+#wani_game {
     position:absolute;
     top: 0%;
     margin: 0;
@@ -181,7 +181,7 @@ body :hover {
     height: 100vh;      
 }
 
-#masterWani {
+#master_wani {
     position:absolute;
     display:flex; 
     top:0%;
@@ -193,12 +193,12 @@ body :hover {
     height: 500px;      
 }
 
-#masterWani img {
+#master_Wani img {
     z-index: 10; 
     user-select: none;
 }
 
-#yellowwani {
+#yellow_wani {
     position:absolute;
     display:flex;   
     bottom: 5%;
@@ -210,12 +210,12 @@ body :hover {
     z-index: 9;    
 }
 
-#yellowwani :hover {
+#yellow_wani :hover {
     transform: rotate(360deg);
     transition-duration: 0.5s;
 }
 
-#wanitimer {
+#wani_timer {
     display:flex;
     text-align: center;
     flex-flow: column;
@@ -227,7 +227,7 @@ body :hover {
     height: 300px;    
 }
 
-.timerText { 
+.timer_text { 
     text-align: center;
     user-select: none;
     margin: 0;
@@ -236,7 +236,7 @@ body :hover {
     height: 300px;     
 }
 
-.sucorText {
+.sucor_text {
     text-align: center;
     user-select: none;
     margin: 0;
@@ -267,7 +267,7 @@ body :hover {
     font-size: 50px;
 }
 
-#wanigameST {
+#wani_gameST {
     text-align: center;
     color: black;
     padding: 0;
@@ -293,14 +293,14 @@ body :hover {
     background-color: black;
 }
 
-#numeronText {
+#numeron_text {
     width: 400px;
     margin: 10px 0 0 5px;
     font-size: 70px;
     font-family: fantasy;
 }
 
-#attResult {
+#att_result {
     display:flex;
     position: absolute;
     top: 0%;
@@ -315,7 +315,7 @@ body :hover {
     font-size: 40px;
 }
 
-#setNum {
+#set_num {
     color: black;
     font-size: 50px;
     width: 1000px;
@@ -323,7 +323,7 @@ body :hover {
     color: white;
 }
 
-#selectBox {
+#select_box {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -335,7 +335,7 @@ body :hover {
 }
 
 
-#numSet {
+#num_set {
     display:flex;
     justify-content:center;
     position:relative;
@@ -348,14 +348,14 @@ body :hover {
     color: black;
 }
 
-.textGrop {
+.text_grop {
     display:flex;
     position:relative;
     width: 100%;
     height: 50%;
 }
 
-.btnGrop {
+.btn_grop {
     display:flex;
     justify-content:center;
     position: absolute;
@@ -364,7 +364,7 @@ body :hover {
     height: 50%;
 }
 
-#setText {
+#set_text {
     display:flex;
     position: absolute;
     text-align: center;
@@ -378,7 +378,7 @@ body :hover {
     font-size: 90px;
 }
 
-.btnGrop button {
+.btn_grop button {
     display:inline-block;
     text-align: center;
     margin-top: 20px;
@@ -387,7 +387,7 @@ body :hover {
     font-size: 100px;
 }
 
-#numeronStart {
+#numeron_start {
     background-color: white;
     margin-left: 5px;
     color: black;
