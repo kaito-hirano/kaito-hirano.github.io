@@ -3,8 +3,8 @@
 
 //ゲーム選択画面------------------------------------------
 
-const wanibtn = document.getElementById("wanibtn");
-const numeronbtn = document.getElementById("numeronbtn");
+const wanibtn = document.getElementById("wani_btn");
+const numeronbtn = document.getElementById("numeron_btn");
 const wanipani = document.getElementById("wanipani");
 const numeron = document.getElementById("numeron");
 
@@ -29,12 +29,12 @@ numeronbtn.addEventListener("click",numeST);
 
 //ヌメロン初期設定------------------------------------------------------------------------------
 
-const start = document.getElementById("numeronStart");
-const setText1 = document.getElementById("setText");
-const numSet = document.getElementsByClassName("numSelect");
-const numCler = document.getElementById("numCler");
+const start = document.getElementById("numeron_start");
+const setText1 = document.getElementById("set_text");
+const numSet = document.getElementsByClassName("num_select");
+const numCler = document.getElementById("num_cler");
 const attack = document.getElementById("attack");
-const setNum = document.getElementById("setNum");
+const setNum = document.getElementById("set_num");
 const result = document.getElementById("result");
 const endNume = document.getElementById("end");
 const stamp = document.getElementById("stamp");
@@ -50,12 +50,12 @@ let strKeep = 0;
 let command = 0;
 
 //ワニワニパニック初期設定------------------------------------------------------------------------------
-const waniStart = document.getElementById("waniStart");
-const waniGame = document.getElementById("wanigame");
+const waniStart = document.getElementById("wani_start");
+const waniGame = document.getElementById("wani_game");
 const waniText = document.getElementById("waniwani");
 const timerText = document.getElementById("timer");
 const sucorText = document.getElementById("sucor");
-const wanigameST = document.getElementById("wanigameST");
+const wanigameST = document.getElementById("wani_gameST");
 const yellowwani = document.getElementsByClassName("wani");
 waniGame.style.visibility = "hidden";
 let  timer = 30;
