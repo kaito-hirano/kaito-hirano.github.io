@@ -178,7 +178,7 @@ function clear () {
   if (command >= 10) {
     comMord();
   }
-  selectNum
+  selectNum.pop();
   setText1.innerText = selectNum.join("");
 }
 
