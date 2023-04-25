@@ -303,16 +303,19 @@ body :hover {
 #att_result {
     display:flex;
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 10px;
+    right: 10px;
     background-color: black;
-    width: 240px;
-    height: 350px;
+    width: 400px;
+    height: 450px;
 }
 
 #result {
+    position: absolute;
+    top: 0;
+    right: 0;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #set_num {
