@@ -3,8 +3,8 @@
 
 //ゲーム選択画面------------------------------------------
 
-const wanibtn = document.getElementById("wani_btn");
-const numeronbtn = document.getElementById("numeron_btn");
+const waniBtn = document.getElementById("wani_btn");
+const numeronBtn = document.getElementById("numeron_btn");
 const wanipani = document.getElementById("wanipani");
 const numeron = document.getElementById("numeron");
 
@@ -12,25 +12,25 @@ wanipani.style.visibility = "hidden";
 numeron.style.visibility = "hidden";
 
 function waniST () {
-  wanibtn.style.visibility = "hidden";
-  numeronbtn.style.visibility = "hidden";
+  waniBtn.style.visibility = "hidden";
+  numeronBtn.style.visibility = "hidden";
   wanipani.style.visibility = "visible";
 }
 
 function numeST () {
-  wanibtn.style.visibility = "hidden";
-  numeronbtn.style.visibility = "hidden";
+  waniBtn.style.visibility = "hidden";
+  numeronBtn.style.visibility = "hidden";
   numeron.style.visibility = "visible";
 }
 
-wanibtn.addEventListener("click",waniST);
-numeronbtn.addEventListener("click",numeST);
+waniBtn.addEventListener("click",waniST);
+numeronBtn.addEventListener("click",numeST);
 
 
 //ヌメロン初期設定------------------------------------------------------------------------------
 
 const start = document.getElementById("numeron_start");
-const setText1 = document.getElementById("set_text");
+const setText = document.getElementById("set_text");
 const numSet = document.getElementsByClassName("num_select");
 const numCler = document.getElementById("num_cler");
 const attack = document.getElementById("attack");
@@ -65,6 +65,7 @@ let count1 = 0;
 let waniNumber = 0;
 waniText.innerText = "ワニワニパニック";
 sucorText.innerText = sucor;
+timerText.innerText = String(timer).padStart(2,"0");
 
 
 //ワニワニパニック##################################################################
@@ -79,18 +80,17 @@ waniText.addEventListener("click",wani);
 
 //タイマー機能------------------------------------------
 
-timerText.innerText = String(timer).padStart(2,"0") ;
 function timerStart() {
   wanigameST.style.visibility =   "hidden"; 
     if (timer > 0) {
-        setTimeout(timerStart,1000);
-        if (timer % 2 === 0) {
-            waniNumber = Math.floor((Math.random() * 8));
-            setTimeout(wanigoY,2500);
-        }
+      setTimeout(timerStart,1000);
+      if (timer % 2 === 0) {
+        waniNumber = Math.floor((Math.random() * 8));
+        setTimeout(wanigoY,2500);
+      }
     } else {
-        alert(`スコア： ${count1} 点`);
-        window.location.reload();
+      alert(`スコア： ${count1} 点`);
+      window.location.reload();
     }
     timer--;
     timerText.innerText =timer;
@@ -121,7 +121,6 @@ function waniDown () {
 
 function counter() {
   count1++;
-  console.log(count1);
   sucorText.innerText = count1;
 }
 
@@ -168,7 +167,7 @@ function numSelect (event) {
   if (selectNum.length < 3 && selectNum.indexOf(event.target.innerText) === -1) { 
     selectNum.push(event.target.innerText);
   }
-  setText1.innerText = selectNum.join("");
+  setText.innerText = selectNum.join("");
 }
 
 //ユーザーナンバー１つ消す----------------------------------------------------------------
@@ -179,7 +178,7 @@ function clear () {
     comMord();
   }
   selectNum.pop();
-  setText1.innerText = selectNum.join("");
+  setText.innerText = selectNum.join("");
 }
 
 numCler.addEventListener("click",clear);
@@ -213,9 +212,9 @@ function attackNum () {
 
 //GameClear設定---------------------------------------------------------------------------
 
-function gameclear () {
+function gameClear () {
   endNume.innerText = "Congratulation!!!!!" ;
-  setText1.style.visibility = "hidden";
+  setText.style.visibility = "hidden";
   endNume.style.visibility = "visible";
   stamp.style.visibility = "visible";
   setTimeout(doReload,5000);
@@ -225,7 +224,7 @@ function gameclear () {
 
 function gameOver () {
   endNume.innerText = `gameOver!!!正解は ${user1.join(" ")}`;
-  setText1.style.visibility = "hidden";
+  setText.style.visibility = "hidden";
   endNume.style.visibility = "visible";
   setTimeout(doReload,5000);
 }
@@ -267,7 +266,7 @@ function check () {
   attResult.push("\n");
   result.innerText = attResult.join("");
   if (hit === 3){
-    gameclear();
+    gameClear();
   } else if (count === 5) {
     endNume.innerText = `Last Chance`;
     endNume.style.visibility = "visible";
@@ -276,7 +275,7 @@ function check () {
     gameOver();
   }
   selectNum = [];
-  setText1.innerText = selectNum.join("");
+  setText.innerText = selectNum.join("");
 }
 
 attack.addEventListener("click",attackNum);
